@@ -32,10 +32,10 @@ int main()
 			cout << x1 << " - " << x2 << " = " << sub(x1, x2) << endl;
 			break;
 		case '*':
-			cout << "*" << endl;
+			cout << x1 << " * " << x2 << " = " << mul(x1, x2) << endl;
 			break;
 		case '/':
-			cout << "/" << endl;
+			cout << x1 << " / " << x2 << " = " << div(x1, x2) << endl;
 			break;
 		case 0:
 			k = 1;
