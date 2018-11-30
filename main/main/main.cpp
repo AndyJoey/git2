@@ -15,6 +15,7 @@ int main()
 	while (k==0)
 	{
 		double x1, x2;
+		cout << "Enter an expression:" << endl;
 		cin >> x1;
 		cin >> op;
 		cin >> x2;
@@ -30,7 +31,10 @@ int main()
 			cout << x1 << " * " << x2 << " = " << mul(x1, x2) << endl;
 			break;
 		case '/':
-			cout << x1 << " / " << x2 << " = " << div(x1, x2) << endl;
+			{
+				if (x2!=0) cout << x1 << " / " << x2 << " = " << div(x1, x2) << endl;
+				else cout << "You can't divide by zero" << endl;
+			}
 			break;
 		}
 		cout<< "Continue? (y or n)"<<endl;
