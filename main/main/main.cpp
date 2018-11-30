@@ -2,40 +2,40 @@
 //
 #include "stdafx.h"
 #include <iostream>
-#include <stdlib.h>
+#include "stdlib.h"
 #include "funcs.h"
 using namespace std;
 
 int main()
 {
-	int input;
+	
+	char op,y; 
 	int k=0;
-	cout << "1" << endl;
-	cout << "2" << endl;
-	cout << "3" << endl;
-	cout << "4" << endl;
-	cout << "0 End " << endl;
-	while (k ==0) {
-		
-		cin >> input;
-		switch (input)
+	
+	while (k==0)
+	{
+		double x1, x2;
+		cin >> x1;
+		cin >> op;
+		cin >> x2;
+		switch (op)
 		{
-		case 1:
-			cout << "+" << endl;
+		case '+':
+			cout << x1 << " + " << x2 << " = " << add(x1, x2) << endl;
 			break;
-		case 2:
-			cout << "-" << endl;
+		case '-':
+			cout << x1 << " - " << x2 << " = " << sub(x1, x2) << endl;
 			break;
-		case 3:
-			cout << "*" << endl;
+		case '*':
+			cout << x1 << " * " << x2 << " = " << mul(x1, x2) << endl;
 			break;
-		case 4:
-			cout << "/" << endl;
+		case '/':
+			cout << x1 << " / " << x2 << " = " << div(x1, x2) << endl;
 			break;
-		case 0:
-			k = 1;
 		}
-
+		cout<< "Continue? (y or n)"<<endl;
+		cin >> y;
+		if (y=='n') k=1;
 	}
 	system("pause");
 	return 0;
