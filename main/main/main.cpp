@@ -3,6 +3,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <stdlib.h>
+#include "funcs.h"
 using namespace std;
 
 int main()
@@ -20,16 +21,16 @@ int main()
 		switch (input)
 		{
 		case 1:
-			cout << "f1" << endl;
+			cout << "+" << endl;
 			break;
 		case 2:
-			cout << "f2" << endl;
+			cout << "-" << endl;
 			break;
 		case 3:
-			cout << "f3" << endl;
+			cout << "*" << endl;
 			break;
 		case 4:
-			cout << "f4" << endl;
+			cout << "/" << endl;
 			break;
 		case 0:
 			k = 1;
