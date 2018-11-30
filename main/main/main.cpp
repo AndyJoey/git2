@@ -8,16 +8,11 @@ using namespace std;
 
 int main()
 {
-	 
-	char op; 
+	
+	char op,y; 
 	int k=0;
 	
-	cout << "+" << endl;
-	cout << "-" << endl;
-	cout << "*" << endl;
-	cout << "/" << endl;
-	cout << "0 End " << endl;
-	while (k ==0)
+	while (k==0)
 	{
 		double x1, x2;
 		cin >> x1;
@@ -37,10 +32,10 @@ int main()
 		case '/':
 			cout << x1 << " / " << x2 << " = " << div(x1, x2) << endl;
 			break;
-		case 0:
-			k = 1;
 		}
-
+		cout<< "Continue? (y or n)"<<endl;
+		cin >> y;
+		if (y=='n') k=1;
 	}
 	system("pause");
 	return 0;
